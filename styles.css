@@ -1,6 +1,20 @@
 body {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #011F3F;
+}
+
+.username-input{
+  background-color: #011F3F;
+  border: 1px solid #FEF2BF;
+  color: #FEF2BF;
+  border-radius: 10px;
+  position: absolute;
+  padding: 5px 10px;
+  top: 10px;
+  right: 2px;
 }
 
 #level-title {
@@ -11,7 +25,8 @@ body {
 }
 
 .container {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 50%;
   margin: auto;
 
@@ -50,4 +65,27 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+.leaderboard{
+  border-radius: 10px;
+  background-color: #06192d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #FEF2BF;
+  font-size: 20px;
+}
+
+.leaderboard-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li{
+  list-style-type: none;
+  color: #FEF2BF;
+  text-align: center;
 }
